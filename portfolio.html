@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>WebStudio-portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+        <nav class="site-nav">
+            <a class="logo" href="./index.html"><span class="accent-logo-color">Web</span>Studio</a>
+            <ul class="site-nav-list">
+                <li class="nav-menu-item"> <a class="nav-menu-item-link" href="./index.html">Студия</a></li>
+                <li class="nav-menu-item"> <a class="nav-menu-item-link current" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-menu-item"> <a class="nav-menu-item-link" href="./index.html#team">Контакты</a></li>
+            </ul>
+        </nav>    
+        <ul class="contacts">
+            <li class="contact-item">
+                <a class="contact-item-link" href="mailto:info@devstudio.com">
+                    <svg class="contact-icon" width="16px" height="12px">
+                         <use href="./images/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="contact-item">
+                <a class="contact-item-link" href="tel:+380961111111">
+                    <svg class="contact-icon" width="10px" height="16px">
+                        <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+        </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+          <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <!-- filter -->
+          <ul class="filter">
+              <li class="filter-item"><button class="filter-btn" type="button">Все</button></li>
+              <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
+              <li class="filter-item"><button class="filter-btn" type="button">Приложения</button></li>
+              <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
+              <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button></li> 
+          </ul>
+          <!-- examples -->
+         <ul class="examples-list">
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-1.jpg" alt="вебсайт технокряк" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Технокряк</h2>
+                        <p class="examples-list-item-description">Веб-сайт</p>
+                    </div>
+                </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-2.jpg" alt="дизайн постера" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="examples-list-item-description">Дизайн</p>
+                    </div>
+                </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-3.jpg" alt="приложение для ресторана" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Ресторан Seafood</h2>
+                        <p class="examples-list-item-description">Приложение</p>
+                    </div>
+                 </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-4.jpg" alt="проект прайм" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Проект Prime</h2>
+                        <p class="examples-list-item-description">Маркетинг</p>
+                    </div>
+                </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-5.jpg" alt="приложение боксы" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Проект Boxes</h2>
+                        <p class="examples-list-item-description">Приложение</p>
+                     </div>
+                </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-6.jpg" alt="вебсайт про вдохновение" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Inspiration has no Borders</h2>
+                        <p class="examples-list-item-description">Веб-сайт</p>
+                    </div>
+                </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-7.jpg" alt="дизайн издания" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Издание Limited Edition</h2>
+                        <p class="examples-list-item-description">Дизайн</p>
+                    </div>
+                </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-8.jpg" alt="проект лаб" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Проект LAB</h2>
+                        <p class="examples-list-item-description">Маркетинг</p>
+                    </div>
+                    </a>
+             </li>
+             <li class="examples-list-item" >
+                 <a class="examples-list-item-link" href="">
+                     <img class="examples-list-item-img" src="./images/img-project-9.jpg" alt="приложение для развития бизнеса" width="370" height="294">
+                     <div class="wrapper">
+                        <h2 class="examples-list-item-title">Growing Business</h2>
+                        <p class="examples-list-item-description">Приложение</p>
+                    </div>
+                 </a>
+             </li>
+         </ul>
+        </div>
+      </section> 
+    </main>
+    <footer class="footer">
+        <!-- contacts -->
+        <div class="container">
+            <div class="wrap">
+            <a class="logo" href="./index.html" ><span class="accent-logo-color">Web</span><span class="logo-white">Studio</span></a>
+            <address>
+                <ul class="main-contacts-list">
+                    <li class="main-contacts-item">
+                        <a class="main-contacts-link map" href="https://goo.gl/maps/psRtu3tgyUnC2bHMA" target="_blank"> г. Киев, пр-т Леси Украинки, 26 </a>
+                    </li>
+                    <li class="main-contacts-item">
+                        <a class="main-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="main-contacts-item">
+                        <a class="main-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+            </div>
+            <div class="footer-social">
+                <p class="join">присоединяйтесь</p>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="https://www.instagram.com/" target="_blank">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="https://twitter.com/" target="_blank">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="https://www.facebook.com" target="_blank">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="footer-social-link" href="https://www.linkedin.com" target="_blank">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
