@@ -141,7 +141,7 @@ img {
     height: 4px;
     background-color: var(--accent-text-color);
     border-radius: 2px;
-    transform: translateY(0);
+    transform: translateY(25%);
   
 }
 .contact-item-link {
