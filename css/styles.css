@@ -201,6 +201,7 @@ img {
     color: var(--reserve-text-color);
     background-color: var(--accent-text-color);
 }
+
 /* ========= ADVANTAGES ======== */
 .advantage .container {
     padding-top: 94px;
@@ -503,7 +504,7 @@ img {
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
 
-     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .examples-list-item:hover,
 .examples-list-item:focus {
@@ -566,8 +567,11 @@ img {
     min-width: 100%;
     min-height: 100%;
     background-color:rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 700ms linear;
 }
-.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: none;
     pointer-events: none;
@@ -576,22 +580,31 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 700ms cubic-bezier(.42,0,.58,1);
 
     padding: 8px;
     width: 528px;
     height: 581px;
     border-radius: 4px;
     background-color: var(--reserve-text-color);
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-btn {
     position: absolute;
     top: 8px;
     right: 8px;
 
+    cursor: pointer;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background: #FFFFFF;
+}
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
 }
